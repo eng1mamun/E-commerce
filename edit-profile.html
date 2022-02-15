@@ -1,0 +1,997 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>E-commerce Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome-all.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="fixed-social">
+        <div>
+            <a href="#" class="fixed-facebook" target="_blank"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-twitter" target="_blank"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-gplus" target="_blank"><i class="fa fa-google"></i> <span>Google+</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-linkedin" target="_blank"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-instagrem" target="_blank"><i class="fa fa-instagram"></i> <span>Instagram</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-tumblr" target="_blank"><i class="fa fa-tumblr"></i> <span>Tumblr</span></a>
+        </div>
+    </div>
+
+    <!-- header start -->
+    <header>
+        <!-- top-bar start -->
+        <div class="header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6">
+                        <ul class="top-header-left d-flex">
+                            <li><a href="#">Chat with us</a></li>
+                            <li>+880 1744880368</li>
+                            <li>eng.mamun48@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="top-header-right d-flex justify-content-end">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top-bar end -->
+
+        <!-- header search start -->
+        <div class="header-search-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt="e-commerce-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="header-search">
+                            <form>
+                                <div class="search-category">
+                                    <select class="form-select">
+                                        <option selected>All Categories</option>
+                                        <option value="1">Winter Collection</option>
+                                        <option value="2">Mobiles</option>
+                                        <option value="3">Computers</option>
+                                    </select>
+                                </div>
+                                <div class="header-search-box">
+                                    <input type="search" placeholder="Search Products,Categories">
+                                </div>
+                                <div class="header-search-icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <ul class="header-search-right d-flex">
+                            <li data-bs-toggle="offcanvas" href="#offcanvasShopping" role="button" aria-controls="offcanvasExample"><sub>4</sub><i class="fa fa-shopping-basket"></i> </li>
+                            <li id="currency"><select class="form-select">
+                                    <option selected>BDT</option>
+                                    <option value="1">India</option>
+                                </select>
+                            </li>
+                            <li id="userProfile">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-user"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">User</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header search end -->
+        <!-- Cart Modal -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasShopping" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="single-cart-product alert alert-dismissible fade show d-flex" role="alert">
+                    <div class="single-cart-image">
+                        <img src="img/product-1.jpg" alt="">
+                    </div>
+                    <div class="single-product-content">
+                        <h6>iPhone 11</h6>
+                        <ul class="single-cart-product-list">
+                            <li><span>Farm : </span>Tharamis Farm</li>
+                            <li><span>Freshness : </span>1 day old</li>
+                        </ul>
+                        <div class="single-product-cart-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="single-cart-product-price">
+                            <h5>$132.00 <del>$48.56</del></h5>
+                            <div class="cartIncreDre">
+                                <a href="#" class="cartIncreDre__minus"><span>-</span></a>
+                                <input name="cartIncreDre" type="text" class="cartIncreDre__input" value="1">
+                                <a href="#" class="cartIncreDre__plus"><span>+</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="button" class="single-cart-close" data-bs-dismiss="alert"><span> <i
+                                class="fa fa-close"></i> Remove</span></button>
+                </div>
+                <div class="offCanvas-footer">
+                    <div class="cartContinue">
+                        <div class="card-footer">
+                            <ul class="order-summery-subTotal">
+                                <li>Subtotal: <span>$47.21</span></li>
+                                <li>Tax: <span>$10%</span></li>
+                                <li>Shipping: <span>$0</span></li>
+                            </ul>
+                            <div class="card-promo">
+                                <form action="#">
+                                    <input type="text" placeholder="Apply promo code">
+                                    <button>Apply now</button>
+                                </form>
+                            </div>
+                            <strong>Grand Total</strong>
+                            <div class="card-footer-bottom d-flex justify-content-between align-items-center">
+                                <h3><strong>$11450.00</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-bottom">
+                        <span class="continue-shipping">
+                            <a href="#">Continue shopping</a>
+                        </span>
+                        <button type="button" class="btn cartCheckOut">Go To Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main menu start -->
+        <div class="main-menu-area">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-xl-2">
+                        <div class="allCategory">
+                            <ul>
+                                <li><a href="#">Fashions <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Health & Beauty <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Electronics <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Cameras <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Shoes <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Babies <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Accessories <i class="fas fa-chevron-right "></i></a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="col-xl-12">
+                        <div class="menu-bar ">
+                            <ul class="d-flex">
+                                <li class="allCategory">
+                                    <a href="#">allCategory <i class="fas fa-chevron-down "></i></a>
+                                    <ul class="sideBarMenu" id="sideBarMenu">
+                                        <li><a href="#">Fashions <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Health & Beauty <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Electronics <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cameras <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Shoes <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Babies <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Accessories <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Fashions <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Health & Beauty <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Electronics <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Cameras <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Shoes <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Babies <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Accessories <i class="fas fa-chevron-down "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main menu end-->
+
+    </header>
+    <!-- header end -->
+
+
+    <!-- edit-profile start -->
+    <div class="edit_profile-area section-padding">
+        <div class="container">
+            <h3 class="edit-profile-heading">Edit Profile</h3>
+            <div class="row mb-5">
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="profile-image">
+                        <h4>Profile Picture</h4>
+                        <img src="img/logo.png" class="w-25" alt="">
+                        <div class="profile-button">
+                            <div class="button-wrapper">
+                                <!-- <span class="label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                  Upload image
+                                </span>
+                                <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File"> -->
+
+                                <form method="post" action="" enctype="multipart/form-data">
+                                    <label for="hiddenBtn" class="choose-btn" id="chooseBtn"><i class="fas fa-cloud-upload-alt"></i> Upload Image</label>
+                                    <input type="file" id="hiddenBtn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="change-password">
+                        <h4>change password</h4>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="c_pass"><strong>Current Password</strong></label>
+                                <input type="text" id="c_pass" name="c_pass" class="form-control" placeholder="Current Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="n_pass"><strong>New Password</strong></label>
+                                <input type="text" id="n_pass" name="c_pass" class="form-control" placeholder="New Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="cc_pass"><strong>Confirm New Password</strong></label>
+                                <input type="text" id="cc_pass" name="c_pass" class="form-control" placeholder="Confirm Password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="change-password-bottom">
+                        <span class="user-information">
+                            <input type="checkbox" name="checkbox" > Change Email
+                        </span>
+
+                        <span class="user-information">
+                            <input type="checkbox" name="checkbox"> Change Password
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <span class="user-information">
+                <input type="checkbox" name="checkbox"> user information
+            </span>
+            <div class="row">
+                <h4 class="personal_information">personal information</h4>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="form-group">
+                        <label for="fname"><strong>First Name</strong></label>
+                        <input type="text" id="fname" class="form-control" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="form-group">
+                        <label for="lname"><strong>Last Name</strong></label>
+                        <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="form-group ">
+                        <label for="phone"><strong>Phone Number</strong></label>
+                        <div class="phone_number d-flex">
+                            <span class="input-group-text">+880</span>
+                            <input type="text" id="phone" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="form-group ">
+                        <label for="email"><strong>Email</strong></label>
+                        <div class="phone_number d-flex">
+                            <span class="input-group-text">@</span>
+                            <input type="text" id="email" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="form-group ">
+                        <label for="email"><strong>Country</strong></label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Country</option>
+                            <option value="1">Bangladesh</option>
+                            <option value="2">India</option>
+                            <option value="3">Dhaka</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center password-bottom-button">
+                <div class="col-sm-3">
+                    <input type="submit" class="form-control" style="background-color: #F4A423; border: 0; color: #fff;" value="Save Changes">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit-profile end -->
+
+
+
+
+
+    <!-- delivery start -->
+    <div class="delivery-area" style="background-color: #15131D;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>fast shipping</h4>
+                            <p>Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>ONLINE PAYMENT</h4>
+                            <p>Payment methods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>24/7 SUPPORT</h4>
+                            <p>Unlimited help desk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>100% SAFE</h4>
+                            <p>View our benefits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delivery end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-area section-padding" style="background-color: #F2F2F2;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4">
+                        <div class="footer-widget">
+                            <h4>information</h4>
+                            <ul class="footer-address">
+                                <li class="d-flex">
+                                    <div class="address-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <p>60/A, Zakir Hossain Road, Mohammadpur, Dhaka-1206.</p>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="address-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <p>+880 1744880368</p>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="address-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <p>eng.mamun48@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-xl-8">
+                        <div class="row">
+                            <div class="col-xxl-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <h4>Connections</h4>
+                                    <ul class="footer-address">
+                                        <li>
+                                            <a href="#" target="_blank">Facebook</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Twitter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Instagram</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Youtube</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">LinkedIn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <h4>Get in touch</h4>
+                                    <ul class="footer-address">
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <h4>Download Our App</h4>
+                                    <ul class="footer-store d-flex">
+                                        <li>
+                                            <a href="#"><img src="img/googlePlay.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="img/appStore.jpg" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row mt-4 footer-tags">
+                    <div class="col-xxl-12 col-xl-12">
+                        <div class="footer-widget">
+                            <h4>Product tags</h4>
+                            <ul class="tags-menu d-flex flex-wrap">
+                                <li>Beans</li>
+                                <li>Carrots</li>
+                                <li>Apples</li>
+                                <li>Garlic</li>
+                                <li>Mushrooms</li>
+                                <li>Tomatoes</li>
+                                <li>Chilli peppers</li>
+                                <li>Broccoli</li>
+                                <li>Watermelons</li>
+                                <li>Oranges</li>
+                                <li>Bananas</li>
+                                <li>Grapes</li>
+                                <li>Cherries</li>
+                                <li>Meat</li>
+                                <li>Seo tag</li>
+                                <li>Fish</li>
+                                <li>Seo tag</li>
+                                <li>Fresh food</li>
+                                <li>Lemons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright-ara text-center" style="background-color: #15131D;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-content">
+                            <p style="margin: 0; color: #fff; padding-top: 15px;padding-bottom: 15px; font-size: 15px;">
+                                <p style="margin: 0; color: #fff; padding-top: 15px;padding-bottom: 15px; font-size: 15px;">
+                                    Copyright &copy; 2022, gaurosoft.com | Designed by: <a href="#">M_A_MAMUN</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/66b9da7e5d.js"></script>
+    <script src="js/isotope.pkgd.min.js "></script>
+    <script src="js/ajax-form.js "></script>
+    <script src="js/wow.min.js "></script>
+    <script src="js/jquery.scrollUp.min.js "></script>
+    <script src="js/imagesloaded.pkgd.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
+
+
+    <script>
+        var hiddenBtn = document.getElementById('hiddenBtn');
+        var chooseBtn = document.getElementById('chooseBtn');
+
+        hiddenBtn.addEventListener('change', function() {
+            if (hiddenBtn.files.length > 0) {
+                chooseBtn.innerText = hiddenBtn.files[0].name;
+            } else {
+                chooseBtn.innerText = 'Choose';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

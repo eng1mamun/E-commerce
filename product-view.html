@@ -1,0 +1,1691 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>E-commerce Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.exzoom.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- top-bar start -->
+        <div class="header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6">
+                        <ul class="top-header-left d-flex">
+                            <li><a href="#">Chat with us</a></li>
+                            <li>+880 1744880368</li>
+                            <li>eng.mamun48@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="top-header-right d-flex justify-content-end">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top-bar end -->
+
+        <!-- header search start -->
+        <div class="header-search-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt="e-commerce-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="header-search">
+                            <form>
+                                <div class="search-category">
+                                    <select class="form-select">
+                                        <option selected>All Categories</option>
+                                        <option value="1">Winter Collection</option>
+                                        <option value="2">Mobiles</option>
+                                        <option value="3">Computers</option>
+                                    </select>
+                                </div>
+                                <div class="header-search-box">
+                                    <input type="search" placeholder="Search Products,Categories">
+                                </div>
+                                <div class="header-search-icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <ul class="header-search-right d-flex">
+                            <li data-bs-toggle="offcanvas" href="#offcanvasShopping" role="button" aria-controls="offcanvasExample"><sub>4</sub><i class="fa fa-shopping-basket"></i> </li>
+                            <li id="currency"><select class="form-select">
+                                    <option selected>BDT</option>
+                                    <option value="1">India</option>
+                                </select>
+                            </li>
+                            <li id="userProfile">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-user"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">User</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header search end -->
+        <!-- Cart Modal -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasShopping" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="single-cart-product alert alert-dismissible fade show d-flex" role="alert">
+                    <div class="single-cart-image">
+                        <img src="img/product-1.jpg" alt="">
+                    </div>
+                    <div class="single-product-content">
+                        <h6>iPhone 11</h6>
+                        <ul class="single-cart-product-list">
+                            <li><span>Farm : </span>Tharamis Farm</li>
+                            <li><span>Freshness : </span>1 day old</li>
+                        </ul>
+                        <div class="single-product-cart-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="single-cart-product-price">
+                            <h5>$132.00 <del>$48.56</del></h5>
+                            <div class="cartIncreDre">
+                                <a href="#" class="cartIncreDre__minus"><span>-</span></a>
+                                <input name="cartIncreDre" type="text" class="cartIncreDre__input" value="1">
+                                <a href="#" class="cartIncreDre__plus"><span>+</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="button" class="single-cart-close" data-bs-dismiss="alert"><span> <i
+                                class="fa fa-close"></i> Remove</span></button>
+                </div>
+                <div class="offCanvas-footer">
+                    <div class="cartContinue">
+                        <div class="card-footer">
+                            <ul class="order-summery-subTotal">
+                                <li>Subtotal: <span>$47.21</span></li>
+                                <li>Tax: <span>$10%</span></li>
+                                <li>Shipping: <span>$0</span></li>
+                            </ul>
+                            <div class="card-promo">
+                                <form action="#">
+                                    <input type="text" placeholder="Apply promo code">
+                                    <button>Apply now</button>
+                                </form>
+                            </div>
+                            <strong>Grand Total</strong>
+                            <div class="card-footer-bottom d-flex justify-content-between align-items-center">
+                                <h3><strong>$11450.00</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopping-cart-bottom">
+                        <span class="continue-shipping">
+                            <a href="#">Continue shopping</a>
+                        </span>
+                        <button type="button" class="btn cartCheckOut">Go To Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main menu start -->
+        <div class="main-menu-area">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-xl-2">
+                        <div class="allCategory">
+                            <ul>
+                                <li><a href="#">Fashions <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Health & Beauty <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Electronics <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Cameras <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Shoes <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Babies <i class="fas fa-chevron-right "></i></a></li>
+                                <li><a href="#">Accessories <i class="fas fa-chevron-right "></i></a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="col-xl-12">
+                        <div class="menu-bar ">
+                            <ul class="d-flex">
+                                <li class="allCategory">
+                                    <a href="#">allCategory <i class="fas fa-chevron-down "></i></a>
+                                    <ul class="sideBarMenu" id="sideBarMenu">
+                                        <li><a href="#">Fashions <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Health & Beauty <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Electronics <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cameras <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Shoes <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Babies <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Accessories <i class="fas fa-chevron-right "></i></a>
+                                            <ul class="megaMenu">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>TRADITIONAL FASHION</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>SHOES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Boots</a></li>
+                                                                <li><a href="#">Flip-Flops</a></li>
+                                                                <li><a href="#">House Slippers</a></li>
+                                                                <li><a href="#">Formal Shoes</a></li>
+                                                                <li><a href="#">Sandals</a></li>
+                                                                <li><a href="#">Sneakers</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>ACCESSORIES</h5>
+                                                            <ul>
+                                                                <li><a href="#">Ties and Cufflinks</a></li>
+                                                                <li>
+                                                                    <a href="#">Wallets & Card Holders</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Eyewear</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bags</a>
+                                                                </li>
+                                                                <li><a href="#">Caps & Hats</a></li>
+                                                                <li><a href="#">Jewelry</a></li>
+                                                                <li><a href="#">Other Accessories</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="single-submenu">
+                                                            <h5>INNER WARE</h5>
+                                                            <ul>
+                                                                <li><a href="#">Panjabis and Sherwanis</a></li>
+                                                                <li><a href="#">Fatuas and Kurtas</a></li>
+                                                                <li><a href="#">Waistcoats</a></li>
+                                                                <li><a href="#">Unstitched Fabrics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Fashions <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Health & Beauty <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Electronics <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Cameras <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Shoes <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Babies <i class="fas fa-chevron-down "></i></a></li>
+                                <li><a href="#">Accessories <i class="fas fa-chevron-down "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main menu end-->
+
+    </header>
+    <!-- header end -->
+
+
+    <!-- product-view start -->
+    <div class="product-view-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8">
+                    <div class="product-view-leftbar bg-white p-3">
+                        <div class="row">
+                            <div class="col-xxl-7 col-xl-7">
+                                <nav class="text-center bigProductShow">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <!-- <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><img src="img/iphone.jpg" alt="">
+                                            <div class="product-discount">
+                                                <span>- 36 %</span>
+                                                <span>Free shipping</span>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><img src="img/iphone.jpg" alt="">
+                                            <div class="product-discount">
+                                                <span>- 36 %</span>
+                                                <span>Free shipping</span>
+                                            </div>
+                                        </div> -->
+                                        <div class="exzoom hidden" id="exzoom">
+                                            <div class="exzoom_img_box">
+                                                <ul class="exzoom_img_ul">
+                                                    <li><img src="https://picsum.photos/270/270/?random" /></li>
+                                                    <li><img src="https://picsum.photos/320/320/?random" /></li>
+                                                    <li><img src="https://picsum.photos/600/600/?random" /></li>
+                                                    <li><img src="https://picsum.photos/500/500/?random" /></li>
+                                                    <li><img src="https://picsum.photos/700/700/?random" /></li>
+                                                    <li><img src="https://picsum.photos/310/310/?random" /></li>
+                                                    <li><img src="https://picsum.photos/410/410/?random" /></li>
+                                                    <li><img src="https://picsum.photos/400/400/?random" /></li>
+                                                </ul>
+                                            </div>
+                                            <div class="exzoom_nav"></div>
+                                            <p class="exzoom_btn">
+                                                <a href="javascript:void(0);" class="exzoom_prev_btn">
+                                                </a>
+                                                <a href="javascript:void(0);" class="exzoom_next_btn">
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="product-discount">
+                                                <span>- 36 %</span>
+                                                <span>Free shipping</span>
+                                            </div>
+                                            <img src="img/iphone.jpg" alt="">
+                                        </div> -->
+                                    </div>
+                                    <!-- <div class="nav nav-tabs border-0 " id="nav-tab" role="tablist">
+                                        <button class="nav-link active border-0 p-0 product-small-image" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                            <img src="img/iphone.png" alt=""></button>
+                                        <button class="nav-link border-0 p-0 product-small-image" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="img/iphone.png"
+                                                alt=""></button>
+                                        <button class="nav-link border-0 p-0 product-small-image" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="img/iphone.png"
+                                                alt=""></button>
+                                    </div> -->
+                                </nav>
+                            </div>
+                            <div class="col-xxl-5 col-xl-5">
+                                <div class="product-review-content">
+                                    <span>SKU : CD234R</span>
+                                    <h2>iPhone 13 pro </h2>
+                                    <div class="review-info d-flex align-items-center">
+                                        <div class="product-review">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+
+
+                                        <h6 class="product-ratting">4.56</h6>
+                                        <div class="review-button">
+                                            <i class="fa fa-plus"></i>
+                                            <button data-bs-toggle="modal" data-bs-target="#reviewModal">Add your
+                                                review</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-brand">
+                                        <p><strong>Brand : </strong><span>Apple</span> In Stock</p>
+                                    </div>
+                                    <div class="product-amount">
+                                        <h3><img src="img/amount-icon.png" alt="">14721.00</h3>
+                                        <del>152.00</del>
+                                    </div>
+                                    <div class="product-colors d-flex align-items-center">
+                                        <h6 class="colors-name m-0">colors : </h6>
+                                        <div class="nav nav-tabs p-0 border-0 small-image " id="nav-tab" role="tablist">
+                                            <button class="nav-link active border-0 p-0 product-small-image" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                                <img src="img/iphone.png" alt="">
+                                                <small>sierra blue</small>
+                                            </button>
+
+                                            <button class="nav-link border-0 p-0 product-small-image" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="img/iphone.png" alt=""> <small>sierra
+                                                    blue</small></button>
+
+                                            <button class="nav-link border-0 p-0 product-small-image" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><img src="img/iphone.png" alt=""> <small>sierra
+                                                    blue</small></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-size d-flex">
+                                        <h6 class="colors-name m-0">Size : </h6>
+                                        <span>6.1"</span>
+                                    </div>
+                                    <div class="product-count">
+                                        <h6 class="colors-name m-0">Quantity : </h6>
+                                        <div class="quantity">
+                                            <a href="#" class="quantity__minus"><span><i
+                                                        class="fa fa-minus"></i></span></a>
+                                            <input name="quantity" type="text" class="quantity__input" value="1">
+                                            <a href="#" class="quantity__plus"><span><i
+                                                        class="fa fa-plus"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-button">
+                                        <a href="#" style="background-color: #FBCC15; color: #000;"><i
+                                                class="fa fa-shopping-cart"></i> add to cart</a>
+                                        <a href="#" style="background-color: #000; color: #fff;"><i
+                                                class="fa fa-shopping-bag"></i> buy now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-share">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="fas fa-share-alt" aria-hidden="true"></i>share
+                                    <div class="share-social-links">
+                                        <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                        <a href="#" style="color: #DB4A39;"><i class="fa fa-google-plus"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" style="color: #1DA1F2;"><i class="fa fa-twitter"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="product-details">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#p_details" type="button" role="tab" aria-controls="p_details" aria-selected="true">Details</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#p_info" type="button" role="tab" aria-controls="p_info" aria-selected="false">More Information</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#p_policy" type="button" role="tab" aria-controls="p_policy" aria-selected="false">Return Policy</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tabs" data-bs-toggle="pill" data-bs-target="#p_review" type="button" role="tab" aria-controls="p_review" aria-selected="false">Review</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="p_details" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="product-details-content">
+                                        <h4>Product Details of Iphone 13 pro</h4>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE Available. Released 2021, September 24/ 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                    <li>Announced 2021, September 14</li>
+                                                    <li>Available. Released 2021, September 24</li>
+                                                    <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="p_info" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <ul class="product-information">
+                                        <li>
+                                            <p>Band Name : </p>Fine Tex Bd
+                                        </li>
+                                        <li>
+                                            <p>Fabrics : </p> 100% Cotton
+                                        </li>
+                                        <li>
+                                            <p>Quality : </p>100% export quality.
+                                        </li>
+                                        <li>
+                                            <p>Color : </p>As given picture
+                                        </li>
+                                        <li>
+                                            <p>Size : </p>S, M, L, XL, XXL
+                                        </li>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus temporibus aspernatur unde, in fuga enim harum deleniti voluptas amet nam a at? Illo illum provident, beatae quasi amet temporibus ipsum quod
+                                            quo laborum laudantium ratione est commodi aliquam quae assumenda ipsa minus nemo aliquid quidem magni facilis eligendi. Provident?</p>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="p_policy" role="tabpanel" aria-labelledby="pills-contact-tabs">
+                                    <div class="product-details-content">
+                                        <h4>Product return Policy</h4>
+                                        <ul>
+                                            <li>Announced 2021, September 14</li>
+                                            <li>Available. Released 2021, September 24</li>
+                                            <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                            <li>Announced 2021, September 14</li>
+                                            <li>Available. Released 2021, September 24</li>
+                                            <li>Technology GSM / CDMA / HSPA / EVDO / LTE Available. Released 2021, September 24/ 5G Technology GSM / CDMA / HSPA / EVDO / LTE Available. Released 2021, September 24/ 5G Technology GSM / CDMA / HSPA / EVDO /
+                                                LTE Available. Released 2021, September 24/ 5G</li>
+                                            <li>Announced 2021, September 14</li>
+                                            <li>Available. Released 2021, September 24</li>
+                                            <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                            <li>Announced 2021, September 14</li>
+                                            <li>Available. Released 2021, September 24</li>
+                                            <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                            <li>Announced 2021, September 14</li>
+                                            <li>Available. Released 2021, September 24</li>
+                                            <li>Technology GSM / CDMA / HSPA / EVDO / LTE / 5G</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="p_review" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                    <div class="product-rating-info d-flex align-items-center justify-content-between">
+                                        <div class="rating-summery rating-area text-center">
+                                            <h4>Customer Rating</h4>
+                                            <div class="rating-score">4.5</div>
+                                            <ul class="rating-details user-rating-review">
+                                                <li>
+                                                    <div class="rating-star"> <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <ul class="rating-details rating-area text-center">
+                                            <li>
+                                                <div class="rating-star"> <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rating-star"> <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rating-star"> <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rating-star"> <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="rating-star"> <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="review-button rating-area text-center">
+                                            <i class="fa fa-plus"></i>
+                                            <button data-bs-toggle="modal" data-bs-target="#reviewModal">Add your
+                                                review</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="customer-review-area">
+                            <div class="single-customer-review">
+                                <div class="review-user d-flex align-items-center">
+                                    <div class="user-image">
+                                        <img src="img/1.jpg" alt="">
+                                    </div>
+                                    <div class="user-name">
+                                        <h6>customer name</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-review-rating d-flex">
+                                    <div class="rating-star">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="review-percent">4.5</span>
+                                </div>
+                                <div class="customer-review-date">
+                                    <p class="d-flex m-0">Reviewed in the <span> Dhaka </span> on January 12, 2020 </p>
+                                </div>
+                                <p>Great shoe for price I've had mine since Middle of March and still going strong and working in new construction homes and complaxes I've put them thu hell.
+                                </p>
+
+                            </div>
+                            <div class="single-customer-review">
+                                <div class="review-user d-flex align-items-center">
+                                    <div class="user-image">
+                                        <img src="img/1.jpg" alt="">
+                                    </div>
+                                    <div class="user-name">
+                                        <h6>customer name</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-review-rating d-flex">
+                                    <div class="rating-star">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="review-percent">4.5</span>
+                                </div>
+                                <div class="customer-review-date">
+                                    <p class="d-flex m-0">Reviewed in the <span> Dhaka </span> on January 12, 2020 </p>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque optio quas modi sequi adipisci earum mollitia magnam ipsam hic, asperiores neque perspiciatis, fuga exercitationem odit necessitatibus odio obcaecati incidunt
+                                    labore.
+                                </p>
+
+                            </div>
+                            <div class="single-customer-review">
+                                <div class="review-user d-flex align-items-center">
+                                    <div class="user-image">
+                                        <img src="img/1.jpg" alt="">
+                                    </div>
+                                    <div class="user-name">
+                                        <h6>customer name</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-review-rating d-flex">
+                                    <div class="rating-star">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="review-percent">4.5</span>
+                                </div>
+                                <div class="customer-review-date">
+                                    <p class="d-flex m-0">Reviewed in the <span> Dhaka </span> on January 12, 2020 </p>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque optio quas modi sequi adipisci earum mollitia magnam ipsam hic, asperiores neque perspiciatis, fuga exercitationem odit necessitatibus odio obcaecati incidunt
+                                    labore.
+                                </p>
+
+                            </div>
+                            <div class="single-customer-review">
+                                <div class="review-user d-flex align-items-center">
+                                    <div class="user-image">
+                                        <img src="img/1.jpg" alt="">
+                                    </div>
+                                    <div class="user-name">
+                                        <h6>customer name</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-review-rating d-flex">
+                                    <div class="rating-star">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="review-percent">4.5</span>
+                                </div>
+                                <div class="customer-review-date">
+                                    <p class="d-flex m-0">Reviewed in the <span> Dhaka </span> on January 12, 2020 </p>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque optio quas modi sequi adipisci earum mollitia magnam ipsam hic, asperiores neque perspiciatis, fuga exercitationem odit necessitatibus odio obcaecati incidunt
+                                    labore.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- review modal -->
+                        <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewHeading" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="reviewHeading">Your Reviewing: <span> iPhone 13
+                                                pro</span></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#" method="post">
+                                            <ul>
+                                                <li><span class="modal-rating-heading">value</span> <span>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </span></li>
+                                                <li><span class="modal-rating-heading">Quality</span> <span>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </span></li>
+                                                <li><span class="modal-rating-heading">Price</span> <span>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </span></li>
+                                                <li class="modalInput"><strong><span class="modal-rating-heading"> Name
+                                                            : </span></strong><input type="text"></li>
+                                                <li class="modalInput"><strong><strong><span
+                                                                class="modal-rating-heading"> Review :
+                                                            </span></strong></strong><textarea name="" id="" cols="30" rows="1"></textarea></li>
+                                                <p>I Recommend This Product <input type="checkbox" name="" id=""></p>
+                                                <input type="submit" value="Submit Review">
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4">
+                    <div class="product-view-sidebar bg-white p-3">
+                        <div class="product-sidebar-info">
+                            <h5>Delivery</h5>
+                            <ul>
+                                <li><i class="far fa-clock"></i><span>3-7 days</span></li>
+                                <li><i class="fas fa-shipping-fast" aria-hidden="true"></i><span>Inside Dhaka</span>
+                                </li>
+                                <li><i class="far fa-money-bill-alt"></i><span>Cash On delivery Available</span></li>
+                            </ul>
+                        </div>
+                        <div class="product-sidebar-info">
+                            <h5>Return & Warranty</h5>
+                            <ul>
+                                <li><i class="fas fa-reply"></i><span>7 days Return</span></li>
+                                <li><i class="fas fa-box"></i><span>2 Year warranty</span></li>
+                            </ul>
+                        </div>
+                        <div class="product-sidebar-info">
+                            <h5>Recommended Product</h5>
+                            <ul class="product-info">
+                                <li><a href="product-view.html"><img src="img/iphone.png" alt="iphone"><span>iPhone 13 pro</span></a></li>
+                                <li><a href="product-view.html"><img src="img/iphone.png" alt="iphone"><span>iPhone 13 pro</span></a></li>
+                                <li><a href="product-view.html"><img src="img/iphone.png" alt="iphone"><span>iPhone 13 pro</span></a></li>
+                                <div class="sidebar-product-btn d-flex justify-content-end pt-2">
+                                    <a href="index-2.html">see more <i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="product-sidebar-info">
+                            <h5>Most Rated</h5>
+                            <ul class="product-info">
+                                <li>
+                                    <img src="img/iphone.png" alt="iphone">
+                                    <span><a href="product-view.html">iPhone 13 pro</a>
+                                        <div class="product-review most-review">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="img/iphone.png" alt="iphone">
+                                    <span><a href="product-view.html">iPhone 13 pro</a>
+                                        <div class="product-review most-review">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="img/iphone.png" alt="iphone">
+                                    <span><a href="product-view.html">iPhone 13 pro</a>
+                                        <div class="product-review most-review">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </div>
+                                    </span>
+                                </li>
+                                <div class="sidebar-product-btn d-flex justify-content-end pt-2">
+                                    <a href="index-2.html">see more <i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="product-share">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="fas fa-share-alt"></i>share
+                                    <div class="share-social-links">
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                        <a href="#" style="color: #DB4A39;"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#" style="color: #1DA1F2;"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product-view end -->
+
+    <!-- banner start -->
+    <div class="banner-area pt-3 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-12 ">
+                    <div class="banner-photo alert alert-warning alert-dismissible fade show" role="alert">
+                        <a href="# "><img class="w-100 " src="img/banner-2.jpg " alt=" "></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end-->
+
+    <!-- related product start -->
+    <div class="related-product-area bg-white section-padding">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="section-heading">
+                        <h4>Related Products!</h4>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="section-heading d-flex justify-content-end">
+                        <a href="index-2.html">see more <i class="fas fa-chevron-right "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- related product end -->
+
+    <!-- banner start -->
+    <div class="banner-area pt-3 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-12 ">
+                    <div class="banner-photo alert alert-warning alert-dismissible fade show" role="alert">
+                        <a href="# "><img class="w-100 " src="img/banner-2.jpg " alt=" "></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end-->
+
+    <!-- related product start -->
+    <div class="related-product-area bg-white section-padding">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="section-heading">
+                        <h4>Man's Product</h4>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="section-heading d-flex justify-content-end">
+                        <a href="index-2.html">see more <i class="fas fa-chevron-right "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- related product end -->
+
+    <!-- banner start -->
+    <div class="banner-area pt-3 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-12 ">
+                    <div class="banner-photo alert alert-warning alert-dismissible fade show" role="alert">
+                        <a href="# "><img class="w-100 " src="img/banner-2.jpg " alt=" "></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end-->
+
+    <!-- related product start -->
+    <div class="related-product-area bg-white section-padding">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="section-heading">
+                        <h4>Women's Products!</h4>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6">
+                    <div class="section-heading d-flex justify-content-end">
+                        <a href="index-2.html">see more <i class="fas fa-chevron-right "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-related-product">
+                        <div class="related-product-image">
+                            <img src="img/product-1.jpg" alt="">
+                        </div>
+                        <div class="related-product-content">
+                            <div class="product-tags">iPhone 11</div>
+                            <a href="product-view.html"><h4 class="related-product-title">Next Generation Invention By Apple</h4></a>
+                            <div class="related-product-price">
+                                <span>$200.00 <del>$100.00</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- related product end -->
+
+
+    <!-- delivery start -->
+    <div class="delivery-area" style="background-color: #15131D;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>fast shipping</h4>
+                            <p>Carrier information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>ONLINE PAYMENT</h4>
+                            <p>Payment methods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>24/7 SUPPORT</h4>
+                            <p>Unlimited help desk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="single-delivery d-flex">
+                        <div class="delivery-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="delivery-content">
+                            <h4>100% SAFE</h4>
+                            <p>View our benefits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delivery end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-area section-padding" style="background-color: #F2F2F2;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4">
+                        <div class="footer-widget">
+                            <h4>information</h4>
+                            <ul class="footer-address">
+                                <li class="d-flex">
+                                    <div class="address-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <p>60/A, Zakir Hossain Road, Mohammadpur, Dhaka-1206./p>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="address-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <p>+880 1744880368</p>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="address-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <p>eng.mamun48@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-xl-8">
+                        <div class="row">
+                            <div class="col-xxl-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <h4>Connections</h4>
+                                    <ul class="footer-address">
+                                        <li>
+                                            <a href="#" target="_blank">Facebook</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Twitter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Instagram</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Youtube</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">LinkedIn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <h4>Get in touch</h4>
+                                    <ul class="footer-address">
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4">
+                                <div class="footer-widget">
+                                    <h4>Download Our App</h4>
+                                    <ul class="footer-store d-flex">
+                                        <li>
+                                            <a href="#"><img src="img/googlePlay.jpg" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="img/appStore.jpg" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row mt-4 footer-tags">
+                    <div class="col-xxl-12 col-xl-12">
+                        <div class="footer-widget">
+                            <h4>Product tags</h4>
+                            <ul class="tags-menu d-flex flex-wrap">
+                                <li>Beans</li>
+                                <li>Carrots</li>
+                                <li>Apples</li>
+                                <li>Garlic</li>
+                                <li>Mushrooms</li>
+                                <li>Tomatoes</li>
+                                <li>Chilli peppers</li>
+                                <li>Broccoli</li>
+                                <li>Watermelons</li>
+                                <li>Oranges</li>
+                                <li>Bananas</li>
+                                <li>Grapes</li>
+                                <li>Cherries</li>
+                                <li>Meat</li>
+                                <li>Seo tag</li>
+                                <li>Fish</li>
+                                <li>Seo tag</li>
+                                <li>Fresh food</li>
+                                <li>Lemons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright-ara text-center" style="background-color: #15131D;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-content">
+                            <p style="margin: 0; color: #fff; padding-top: 15px;padding-bottom: 15px; font-size: 15px;">
+                                Copyright &copy; 2022, gaurosoft.com | Designed by: <a href="#">M_A_MAMUN</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/66b9da7e5d.js"></script>
+    <script src="js/isotope.pkgd.min.js "></script>
+    <script src="js/ajax-form.js "></script>
+    <script src="js/wow.min.js "></script>
+    <script src="js/jquery.scrollUp.min.js "></script>
+    <script src="js/imagesloaded.pkgd.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/jquery.exzoom.js"></script>
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>
